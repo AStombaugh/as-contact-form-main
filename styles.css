@@ -36,14 +36,27 @@ body {
   font-family: var(--font-karla);
 }
 
+h1,
+label,
+input {
+  color: var(--grey-900);
+}
+
 form {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(2fr auto);
   width: 95%;
   max-width: 46rem;
   background-color: var(--white);
   border-radius: 10px;
   padding: 2rem;
+  gap: 1rem;
+}
+
+input {
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid var(--grey-500);
 }
 
 button {

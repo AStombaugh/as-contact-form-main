@@ -23,31 +23,59 @@
   <form>
     <h1>Contact Us</h1>
 
-    First Name
+    <span class="form-field">
+      <label>First Name
+        <input type="text" name="First Name" required>
+      </label>
+    </span>
     <!--This field is required-->
 
-    Last Name
+    <span class="form-field">
+      <label>Last Name
+        <input type="text" name="Last Name" required>
+      </label>
+    </span>
     <!--This field is required-->
 
-    Email Address
-    Please enter a valid email address
+    <span class="form-field">
+      <label>Email Address
+        <input type="text" name="Email Address" required>
+      </label>
+    </span>
+    <!--Please enter a valid email address-->
     <!--This field is required-->
 
-    Query Type
-    General Enquiry
-    Support Request
+    <span>Query Type
+      <label>
+        <input type="radio" name="radio" value="general enquiry"> General Enquiry
+      </label>
+      <label>
+        <input type="radio" name="radio" value="support enquiry"> Support Request
+      </label>
+    </span>
+
+
     <!--Please select a query type-->
 
-    Message
+    <span class="form-field">
+      <label>Message
+        <input type="text" name="Message" required>
+      </label>
+    </span>
     <!--This field is required-->
 
-    I consent to being contacted by the team
-    To submit this form, please consent to being contacted
+    <span class="form-field">
+      <label>I consent to being contacted by the team
+        <input type="checkbox" name="consent" required>
+      </label>
+    </span>
 
-    <button type="submit">Submit</button>
+    <!--To submit this form, please consent to being contacted-->
+
+    <button type="submit" value="Submit">Submit</button>
   </form>
-  Message Sent!
-  Thanks for completing the form. We'll be in touch soon!
+  <!--Message Sent!
+  Thanks for completing the form. We'll be in touch soon!-->
 </body>
 
 </html>
