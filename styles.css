@@ -2,6 +2,7 @@
 
   --green-200: hsl(148, 38%, 91%);
   --green-600: hsl(169, 82%, 27%);
+  --green-dark: hsl(162, 26%, 20%);
   --red: hsl(0, 66%, 54%);
 
   --white: hsl(0, 0%, 100%);
@@ -50,13 +51,17 @@ form {
 
 h1,
 label,
-input {
+input,
+textarea {
+  font-family: var(--font-karla);
+  font-weight: var(--font-400);
   color: var(--grey-900);
 }
 
 h1 {
   grid-row: 1;
   grid-column: 1/3;
+  font-weight: var(--font-700);
 }
 
 input[type="text"] {
@@ -64,6 +69,23 @@ input[type="text"] {
   border-radius: 5px;
   border: 1px solid var(--grey-500);
   cursor: pointer;
+}
+
+input[type="radio"] {
+  accent-color: var(--green-600);
+}
+
+div:has(input[type="radio"]:checked) {
+  background-color: var(--green-200);
+}
+
+input[type="checkbox"] {
+  accent-color: var(--green-600);
+}
+
+input:hover {
+  outline: none;
+  border: 1px solid var(--green-600);
 }
 
 input:focus {
@@ -145,9 +167,23 @@ fieldset legend:after {
   grid-column: 1/3;
 }
 
-.message input {
+.message textarea {
   direction: ltr;
   height: 5rem;
+  padding: 1rem;
+  border-radius: 5px;
+  border: 1px solid var(--grey-500);
+  cursor: pointer;
+}
+
+.message textarea:focus {
+  outline: none;
+  border: 1px solid var(--green-600);
+}
+
+.message textarea:hover {
+  outline: none;
+  border: 1px solid var(--green-600);
 }
 
 .general-inquiry,
@@ -171,6 +207,18 @@ fieldset legend:after {
   cursor: pointer;
 }
 
+.general-inquiry:focus,
+.general-inquiry:active {
+  background-color: var(--green-200);
+  outline: none;
+  border: 1px solid var(--green-600);
+}
+
+.general-inquiry:hover {
+  outline: none;
+  border: 1px solid var(--green-600);
+}
+
 .support-request label {
   margin-left: 0.75rem;
   margin-bottom: 0rem;
@@ -179,6 +227,18 @@ fieldset legend:after {
 
 .support-request input {
   cursor: pointer;
+}
+
+.support-request:focus,
+.support-request:active {
+  background-color: var(--green-200);
+  outline: none;
+  border: 1px solid var(--green-600);
+}
+
+.support-request:hover {
+  outline: none;
+  border: 1px solid var(--green-600);
 }
 
 button {
@@ -196,6 +256,11 @@ button {
   grid-row: 7;
   grid-column: 1/3;
   font-size: 1rem;
+}
+
+button:hover,
+button:focus {
+  background-color: var(--green-dark);
 }
 
 @media screen and (width <=48rem) {
@@ -225,7 +290,7 @@ button {
   }
 
   .message input {
-    height: 15rem;
+    line-height: 15rem;
   }
 
   fieldset {
