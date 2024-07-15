@@ -23,51 +23,60 @@
   <form>
     <h1>Contact Us</h1>
 
-    <span class="form-field">
-      <label>First Name
-        <input type="text" name="First Name" required>
+    <span class="form-field first-name">
+      <label for="first-name-input">
+        First Name
       </label>
+      <input id="first-name-input" type="text" name="First Name" required>
     </span>
     <!--This field is required-->
 
-    <span class="form-field">
-      <label>Last Name
-        <input type="text" name="Last Name" required>
+    <span class="form-field last-name">
+      <label for="last-name-input">
+        Last Name
       </label>
+      <input id="last-name-input" type="text" name="Last Name" required>
     </span>
     <!--This field is required-->
 
-    <span class="form-field">
-      <label>Email Address
-        <input type="text" name="Email Address" required>
+    <span class="form-field email">
+      <label for="email-input">
+        Email Address
       </label>
+      <input id="email-input" type="text" name="Email Address" required>
     </span>
     <!--Please enter a valid email address-->
     <!--This field is required-->
 
-    <span>Query Type
-      <label>
-        <input type="radio" name="radio" value="general enquiry"> General Enquiry
-      </label>
-      <label>
-        <input type="radio" name="radio" value="support enquiry"> Support Request
-      </label>
-    </span>
-
+    <fieldset>
+      <legend>Query Type</legend>
+      <div class="form-field general-inquiry">
+        <label for="general-inquiry-input">General Enquiry</label>
+        <input id="general-inquiry-input" type="radio" name="radio" value="general enquiry" required>
+      </div>
+      <div class="support-request">
+        <label for="support-request-input">
+          Support Request
+        </label>
+        <input id="support-request-input" type="radio" name="radio" value="support request" required>
+      </div>
+    </fieldset>
 
     <!--Please select a query type-->
 
-    <span class="form-field">
-      <label>Message
-        <input type="text" name="Message" required>
+    <span class="form-field message">
+      <label for="message-input">
+        Message
       </label>
+      <input id="message-input" type="text" name="Message" required>
     </span>
     <!--This field is required-->
 
-    <span class="form-field">
-      <label>I consent to being contacted by the team
-        <input type="checkbox" name="consent" required>
+    <span class="form-field consent">
+      <label for="consent">
+        I consent to being contacted by the team
       </label>
+      <input id="consent" type="checkbox" name="consent" required>
     </span>
 
     <!--To submit this form, please consent to being contacted-->
