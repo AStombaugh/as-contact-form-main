@@ -205,7 +205,7 @@ fieldset legend:after {
   border: 1px solid var(--green-600);
 }
 
-.general-inquiry,
+.general-enquiry,
 .support-request {
   display: flex;
   flex-direction: row-reverse;
@@ -216,24 +216,24 @@ fieldset legend:after {
   padding: 1rem;
 }
 
-.general-inquiry label {
+.general-enquiry label {
   margin-left: 0.75rem;
   margin-bottom: 0rem;
   cursor: pointer;
 }
 
-.general-inquiry input {
+.general-enquiry input {
   cursor: pointer;
 }
 
-.general-inquiry:focus,
-.general-inquiry:active {
+.general-enquiry:focus,
+.general-enquiry:active {
   background-color: var(--green-200);
   outline: none;
   border: 1px solid var(--green-600);
 }
 
-.general-inquiry:hover {
+.general-enquiry:hover {
   outline: none;
   border: 1px solid var(--green-600);
 }

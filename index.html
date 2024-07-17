@@ -12,7 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
     rel="stylesheet">
 
-    <script src="scripts.js" defer></script>
+  <script src="scripts.js" defer></script>
 
 
   <link rel="stylesheet" type="text/css" href="styles.css">
@@ -24,72 +24,72 @@
 <body>
 
   <main>
-  <div class="success-modal">
-    <h2>Message Sent!</h2>
-    <p>Thanks for completing the form. We'll be in touch soon!</p>
-  </div>
+    <div class="success-modal">
+      <h2>Message Sent!</h2>
+      <p>Thanks for completing the form. We'll be in touch soon!</p>
+    </div>
 
-  <form name="contact-us-form" method="post">
-    <h1>Contact Us</h1>
+    <form name="contact-us-form" method="post">
+      <h1>Contact Us</h1>
 
-    <span class="form-field first-name">
-      <label for="first-name-input">
-        First Name
-      </label>
-      <input id="first-name-input" type="text" name="First Name" required>
-      <span class="invalid-entry">This field is required</span>
-    </span>
-
-    <span class="form-field last-name">
-      <label for="last-name-input">
-        Last Name
-      </label>
-      <input id="last-name-input" type="text" name="Last Name" required>
-      <span class="invalid-entry">This field is required</span>
-    </span>
-
-    <span class="form-field email">
-      <label for="email-input">
-        Email Address
-      </label>
-      <input id="email-input" type="text" name="Email Address" required>
-      <span class="invalid-entry">Please enter a valid email address</span>
-    </span>
-
-    <fieldset>
-      <legend>Query Type</legend>
-      <div class="form-field general-inquiry">
-        <label for="general-inquiry-input">General Enquiry</label>
-        <input id="general-inquiry-input" type="radio" name="radio" value="general enquiry" required>
-      </div>
-      <div class="support-request">
-        <label for="support-request-input">
-          Support Request
+      <span class="form-field first-name">
+        <label for="first-name-input">
+          First Name
         </label>
-        <input id="support-request-input" type="radio" name="radio" value="support request" required>
-      </div>
-      <span class="invalid-entry query">Please select a query type</span>
-    </fieldset>
+        <input id="first-name-input" type="text" name="First Name" required>
+        <span class="invalid-entry">This field is required</span>
+      </span>
 
-    <span class="form-field message">
-      <label for="message-input">
-        Message
-      </label>
-      <textarea id="message-input" type="text" name="Message" required></textarea>
-      <span class="invalid-entry">This field is required</span>
-    </span>
+      <span class="form-field last-name">
+        <label for="last-name-input">
+          Last Name
+        </label>
+        <input id="last-name-input" type="text" name="Last Name" required>
+        <span class="invalid-entry">This field is required</span>
+      </span>
 
-    <span class="form-field consent">
-      <label for="consent">
-        I consent to being contacted by the team
-      </label>
-      <input id="consent" type="checkbox" name="consent" required>
-      <span class="invalid-entry">To submit this form, please consent to being contacted</span>
-    </span>
+      <span class="form-field email">
+        <label for="email-input">
+          Email Address
+        </label>
+        <input id="email-input" type="text" name="Email Address" required>
+        <span class="invalid-entry">Please enter a valid email address</span>
+      </span>
 
-    <button type="submit" value="Submit">Submit</button>
-  </form>
-</main>
+      <fieldset>
+        <legend>Query Type</legend>
+        <div class="form-field general-enquiry">
+          <label for="general-enquiry-input">General Enquiry</label>
+          <input id="general-enquiry-input" type="radio" name="radio" value="general enquiry" required>
+        </div>
+        <div class="support-request">
+          <label for="support-request-input">
+            Support Request
+          </label>
+          <input id="support-request-input" type="radio" name="radio" value="support request" required>
+        </div>
+        <span class="invalid-entry query">Please select a query type</span>
+      </fieldset>
+
+      <span class="form-field message">
+        <label for="message-input">
+          Message
+        </label>
+        <textarea id="message-input" type="text" name="Message" required></textarea>
+        <span class="invalid-entry">This field is required</span>
+      </span>
+
+      <span class="form-field consent">
+        <label for="consent">
+          I consent to being contacted by the team
+        </label>
+        <input id="consent" type="checkbox" name="consent" required>
+        <span class="invalid-entry">To submit this form, please consent to being contacted</span>
+      </span>
+
+      <button id="submitCTA" type="submit" value="Submit">Submit</button>
+    </form>
+  </main>
 </body>
 
 </html>
