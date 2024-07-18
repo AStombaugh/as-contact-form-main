@@ -22,7 +22,7 @@ console.log(consentInput);
 const submitCTA = document.getElementById("submitCTA");
 console.log(submitCTA);
 
-/*
+
 firstName.addEventListener("input", () => {
   firstName.checkValidity();
   if (firstName.validity.typeMismatch) {
@@ -33,4 +33,7 @@ firstName.addEventListener("input", () => {
     console.log("Valid")
   }
 });
-*/
+
+submitCTA.addEventListener("click", () => {
+  firstName.checkValidity()
+});

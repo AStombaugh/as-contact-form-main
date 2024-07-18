@@ -204,6 +204,16 @@ fieldset legend:after {
   border: 1px solid var(--green-600);
 }
 
+.message textarea .valid {
+  outline: none;
+  border: 1px solid var(--green-600);
+}
+
+.message textarea .invalid {
+  outline: none;
+  border: 1px solid var(--red);
+}
+
 .general-enquiry,
 .support-request {
   display: flex;
@@ -293,7 +303,7 @@ button:focus {
   width: 90%;
   max-width: 28rem;
   margin: -3rem auto;
-  visibility: visible;
+  visibility: hidden;
 }
 
 .success-modal h2 {
