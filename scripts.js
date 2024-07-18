@@ -21,19 +21,3 @@ console.log(consentInput);
 
 const submitCTA = document.getElementById("submitCTA");
 console.log(submitCTA);
-
-
-firstName.addEventListener("input", () => {
-  firstName.checkValidity();
-  if (firstName.validity.typeMismatch) {
-    firstName.setCustomValidity("This field is required");
-    console.log("Invalid")
-  } else {
-    firstName.setCustomValidity("")
-    console.log("Valid")
-  }
-});
-
-submitCTA.addEventListener("click", () => {
-  firstName.checkValidity()
-});
